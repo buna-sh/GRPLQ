@@ -4,7 +4,7 @@
 MODULE_NAME = "Example Module"
 VERSION = "1.0.0"
 
-print(f"Initialized {MODULE_NAME}, Version: {VERSION}")
+print(f"{MODULE_NAME}: Version {VERSION}")
 
 
 # Sample function
