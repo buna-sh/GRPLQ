@@ -1,6 +1,15 @@
 from flask import Flask, jsonify, request
 import threading
 from werkzeug.serving import make_server
+from colorama import Fore, Style, init
+
+
+
+MODULE_NAME = "Flask Module"
+VERSION = "1.0.0"
+
+
+init(autoreset=True)
 
 # Create the Flask app
 app = Flask(__name__)
@@ -58,6 +67,7 @@ class FlaskServerThread:
             print("Flask server is not running.")
 
 
+
 # Create a FlaskServerThread instance
 flask_server = FlaskServerThread()
 
@@ -73,9 +83,5 @@ def stop():
     """
     flask_server.stop()
 
-# Test run for standalone execution
-if __name__ == "__main__":
-    flask_server.start()
-    input("Press Enter to stop the server...\n")  # Keeps the main thread alive
-    flask_server.stop()
+
 
