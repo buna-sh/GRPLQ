@@ -37,6 +37,8 @@ def load_modules(directory="./modules"):
 
     return modules
 
+    #TODO: Create sub dir loader.
+
 
 def main():
     print(f"{Fore.CYAN}Module Loader Initialized. Type 'exit' to quit.{Style.RESET_ALL}")
