@@ -1,3 +1,5 @@
+import sqlite3
+
 MODULE_NAME = "Database Module"
 VERSION = "1.0.0"
 
