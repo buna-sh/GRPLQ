@@ -31,13 +31,14 @@ def init():
 
 def test():
     try:
-        # Connect to the SQLite database (or create it if it doesn't exist)
+        # Connect to the SQLite database
         conn = sqlite3.connect("db.db")
         cursor = conn.cursor()
 
         print("Database Module: Connection test approved.")
     except sqlite3.Error as e:
         print(f"Database Module: An error occurred: {e}")
+        
 
 
 if __name__ == "__main__":
