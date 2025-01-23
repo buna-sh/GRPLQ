@@ -35,10 +35,12 @@ def test():
         conn = sqlite3.connect("db.db")
         cursor = conn.cursor()
 
+        conn.close()
+
         print("Database Module: Connection test approved.")
     except sqlite3.Error as e:
         print(f"Database Module: An error occurred: {e}")
-        
+
 
 
 if __name__ == "__main__":
